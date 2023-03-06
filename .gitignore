@@ -39,6 +39,7 @@ sdist/*
 docs/api/*
 docs/_build/*
 cover/*
+containers
 MANIFEST
 pai/pouw/verification/verifier_client/cmake-build-debug/CMakeCache.txt
 pai/pouw/verification/verifier_client/cmake-build-debug/CMakeFiles/3.12.3/CMakeCCompiler.cmake

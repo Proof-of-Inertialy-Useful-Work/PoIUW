@@ -1,6 +1,33 @@
-# Proof of Useful Work
+# Proof of Inertialy Useful Work
 ![Python](https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Blue_Python_3.8_Shield_Badge.svg/77px-Blue_Python_3.8_Shield_Badge.svg.png) ![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)  [![Maintainability](https://api.codeclimate.com/v1/badges/6c386e3b5e6f45258db1/maintainability)](https://codeclimate.com/github/projectpai/pouw-main-iteration/maintainability)
 
+Proof of Inertialy Useful Work (PoIUW) is an extension to the existing PoUW.  The goal of this extension
+is to encourage full nodes to adopt a more efficient selection algorithm when taking on new tasks.
+This will come in the form of a tax or bonus if the next transaction that a miner accepts has the same 
+model or dataset as the one before.  This is applied on top of the original compensation the model 
+owner offers for training.  This guarantees some **inertia** to the state of the node's environment, 
+rather than miners just going to the next highest bidder.  Miners may also declare their hardware 
+with tax/bonus if accepted tasks compatible.  This will encourage greater environment reuse and bandwidth savings.
+
+## Taxes and Bonuses
+
+For every transaction accepted, the miner node will check the incoming requirements of the task
+(framework, environment, etc.) against the current state of the miner node.  The miner node may
+also provide some of their hardware information to be compared against the recommended system
+requirements of a task.  If the state of the incoming task does not match the internal state of the
+node, the miner will forfeit some portion of the fee to a special bank node.  Similarly, when the
+miner matches its transaction well, the bank awards that node with some small bonus.
+
+There will be some range where the payment is not effected if the miner mostly matches its new task.
+This will account for times when the bank is empty or if there are no perfectly appropriate miners
+available.
+
+Alternatively, there could be no central bank.  Instead, the miners could refuse to accept some
+portion of a payment based off of their internal state and the incoming state.  This can be verified
+through the blocks minted on the chain to avoid unfairly accepting more payment from a mismatched
+transaction.
+
+## PoUW
 Proof of Useful Work (PoUW) is a novel blockchain platform with a new type of user, that is additional to the typical blockchain transactor: the requestor. This paradigm shift has a dual purpose: we provide a typical cryptocurrency with the added benefit of a computational platform at an affordable price.
 
 Our requestor model is using machine learning as useful computation. The work is distributed among worker nodes and verifiers. A client (the requestor) can submit a machine learning task along with preferences, the worker nodes are matched to the task, miners train and mine with nonces derived from the ML processing, and at end they are paid from the client's fee. All interactions are sent as special transactions into the blockchain, so they can be later verified.
