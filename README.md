@@ -1,7 +1,7 @@
 # Proof of Inertialy Useful Work
 ![Python](https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Blue_Python_3.8_Shield_Badge.svg/77px-Blue_Python_3.8_Shield_Badge.svg.png) ![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)  [![Maintainability](https://api.codeclimate.com/v1/badges/6c386e3b5e6f45258db1/maintainability)](https://codeclimate.com/github/projectpai/pouw-main-iteration/maintainability)
 
-Proof of Inertialy Useful Work (PoIUW) is an extension to the existing PoUW.  The goal of this extension
+Proof of Inertialy Useful Work (PoIUW) is an extension to the existing PoUW protocol.  The goal of this extension
 is to encourage full nodes to adopt a more efficient selection algorithm when taking on new tasks.
 This will come in the form of a tax or bonus if the next transaction that a miner accepts has the same 
 model or dataset as the one before.  This is applied on top of the original compensation the model 
